@@ -10,9 +10,8 @@
   },
   "files": [
     "lib",
-    "src",
-    "dist",
-    "es"
+    "es",
+    "dist"
   ],
   "browserslist": [
     "last 2 versions",

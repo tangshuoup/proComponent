@@ -11,9 +11,9 @@
     "build": "father build"
   },
   "files": [
-    "dist",
     "lib",
-    "es"
+    "es",
+    "dist"
   ],
   "browserslist": [
     "last 2 versions",
