@@ -1,0 +1,34 @@
+{
+  "name": "@tangshuo/pro-components",
+  "version": "2.3.52",
+  "description": "@tangshuo/pro-components",
+  "license": "MIT",
+  "sideEffects": false,
+  "main": "lib/index.js",
+  "module": "es/index.js",
+  "types": "es/index.d.ts",
+  "scripts": {
+    "build": "father build"
+  },
+  "files": [
+    "dist",
+    "lib",
+    "es"
+  ],
+  "browserslist": [
+    "last 2 versions",
+    "Firefox ESR",
+    "> 1%",
+    "ie >= 10"
+  ],
+  "dependencies": {
+    "@tangshuo/pro-demo1": "workspace:1.0.0-beta.1"
+  },
+  "peerDependencies": {
+    "react": ">=16.9.0",
+    "react-dom": ">=16.9.0"
+  },
+  "publishConfig": {
+    "access": "public"
+  }
+}
