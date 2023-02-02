@@ -1,6 +1,6 @@
 {
   "name": "@tangshuo/pro-components",
-  "version": "2.3.52",
+  "version": "1.0.0",
   "description": "@tangshuo/pro-components",
   "license": "MIT",
   "sideEffects": false,
@@ -22,7 +22,7 @@
     "ie >= 10"
   ],
   "dependencies": {
-    "@tangshuo/pro-demo1": "workspace:1.0.0-beta.1"
+    "@tangshuo/pro-demo1": "workspace:1.0.0"
   },
   "peerDependencies": {
     "react": ">=16.9.0",
