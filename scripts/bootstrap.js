@@ -1,10 +1,10 @@
 /*
- * @Descripttion: 
- * @version: 
+ * @Descripttion:
+ * @version:
  * @Author: tangshuo
  * @Date: 2023-02-01 09:48:21
  * @LastEditors: tangshuo
- * @LastEditTime: 2023-02-02 09:51:17
+ * @LastEditTime: 2023-02-03 10:39:03
  */
 const { existsSync, writeFileSync, readdirSync, readFileSync } = require('fs');
 const { join, resolve } = require('path');
@@ -22,7 +22,7 @@ const { yParser } = require('@umijs/utils');
     const pkgJSONPath = join(__dirname, '..', 'packages', shortName, 'package.json');
     const pkgFATHERPath = join(__dirname, '..', 'packages', shortName, '.fatherrc.ts');
     const pkgJSONExists = existsSync(pkgJSONPath);
-    const pkgFATHERExists = existsSync(pkgFATHERPath)
+    const pkgFATHERExists = existsSync(pkgFATHERPath);
     let json;
     if (args.force || !pkgJSONExists) {
       json = {
@@ -33,14 +33,14 @@ const { yParser } = require('@umijs/utils');
         main: 'lib/index.js',
         types: 'lib/index.d.ts',
         scripts: {
-          build: 'father build'
+          build: 'father build',
         },
         files: ['lib', 'src', 'dist', 'es'],
         browserslist: ['last 2 versions', 'Firefox ESR', '> 1%', 'ie >= 10'],
         license: 'MIT',
         peerDependencies: {
-          "react": ">=16.9.0",
-          "react-dom": ">16.9.0"
+          react: '>=16.9.0',
+          'react-dom': '>16.9.0',
         },
         publishConfig: {
           access: 'public',
@@ -65,7 +65,7 @@ const { yParser } = require('@umijs/utils');
           if (pkg[key]) json[key] = pkg[key];
         });
       }
-      
+
       writeFileSync(pkgJSONPath, `${JSON.stringify(json, null, 2)}\n`);
     }
 

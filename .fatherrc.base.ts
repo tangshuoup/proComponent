@@ -1,13 +1,12 @@
 import { defineConfig } from 'father';
-
 export default defineConfig({
   cjs: {
     output: './lib',
-    transformer:'babel'
+    transformer: 'babel',
   },
   esm: {
     output: './es',
-    transformer:'babel'
+    transformer: 'babel',
   },
   targets: {
     ie: 10,

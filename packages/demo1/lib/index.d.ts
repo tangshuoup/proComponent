@@ -1,3 +1,5 @@
 /// <reference types="react" />
-declare const _default: () => JSX.Element;
-export default _default;
+import './index.less';
+declare const Demo: () => JSX.Element;
+export { Demo };
+export default Demo;

@@ -14,5 +14,5 @@
       "@tangshuo/pro-components": ["./packages/components/src/index.tsx"]
     }
   },
-  "include": [".dumi/**/*", ".dumirc.ts", "**/src/**/*",]
+  "include": [".dumi/**/*", ".dumirc.ts", "**/src/**/*", "typings.d.ts"]
 }

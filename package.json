@@ -1,31 +1,25 @@
 {
   "name": "components-pro",
   "version": "0.0.1",
-  "description": "A react library developed with dumi",
-  "module": "dist/index.js",
-  "types": "dist/index.d.ts",
+  "description": "components-pro",
   "scripts": {
     "change": "changeset add",
     "change:version": "changeset version",
     "bootstrap": "node ./scripts/bootstrap.js",
-    "release":"pnpm run -r build && pnpm publish",
+    "release": "pnpm run -r build && changeset publish",
     "start": "pnpm run dev",
     "dev": "dumi dev",
-    "build:all": "pnpm run -r build",
-    "build:watch": "father dev",
+    "build": "pnpm run -r build",
     "docs:build": "dumi build",
     "prepare": "husky install && dumi setup",
     "doctor": "father doctor",
-    "lint": "pnpm run lint:es && npm run lint:css",
-    "lint:css": "stylelint \"{src,test}/**/*.{css,less}\"",
+    "lint": "pnpm run lint:es && pnpm run lint:css",
+    "lint:css": "stylelint \"packages/**/*.{css,less}\"",
     "lint:es": "eslint \"{src,test}/**/*.{js,jsx,ts,tsx}\"",
     "prepublishOnly": "father doctor && pnpm run build"
   },
   "authors": [],
   "license": "MIT",
-  "files": [
-    "dist"
-  ],
   "commitlint": {
     "extends": [
       "@commitlint/config-conventional"

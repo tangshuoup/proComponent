@@ -56,7 +56,7 @@ importers:
 
   packages/components:
     specifiers:
-      '@tangshuo/pro-demo1': workspace:1.0.0-beta.1
+      '@tangshuo/pro-demo1': workspace:1.0.0
     dependencies:
       '@tangshuo/pro-demo1': link:../demo1
 
@@ -11946,8 +11946,8 @@ packages:
       builtins: 1.0.3
     dev: true
 
-  /validator/13.7.0:
-    resolution: {integrity: sha512-nYXQLCBkpJ8X6ltALua9dRrZDHVYxjJ1wgskNt1lH9fzGjs3tgojGSCBjmEPwkWS1y29+DrizMTW19Pr9uB2nw==}
+  /validator/13.9.0:
+    resolution: {integrity: sha512-B+dGG8U3fdtM0/aNK4/X8CXq/EcxU2WPrPEkJGslb47qyHsxmbggTWK0yEA4qnYVNF+nxNlN88o14hIcPmSIEA==}
     engines: {node: '>= 0.10'}
     dev: true
 
@@ -12342,7 +12342,7 @@ packages:
     dependencies:
       lodash.get: 4.4.2
       lodash.isequal: 4.5.0
-      validator: 13.7.0
+      validator: 13.9.0
     optionalDependencies:
       commander: 9.5.0
     dev: true
