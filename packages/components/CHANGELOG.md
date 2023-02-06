@@ -1,5 +1,16 @@
 # @tangshuo/pro-components
 
+## 1.1.0
+
+### Minor Changes
+
+- 118155f: test
+
+### Patch Changes
+
+- Updated dependencies [118155f]
+  - @tangshuo/pro-demo1@1.1.0
+
 ## 1.0.2
 
 ### Patch Changes

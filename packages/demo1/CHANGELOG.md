@@ -1,5 +1,11 @@
 # @tangshuo/pro-demo1
 
+## 1.1.0
+
+### Minor Changes
+
+- 118155f: test
+
 ## 1.0.2
 
 ### Patch Changes
