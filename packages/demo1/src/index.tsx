@@ -12,7 +12,7 @@ import './index.less';
 const Demo = () => {
   return (
     <div className="demo">
-      2gdg<span>rerdddddd</span>
+      2gdg<span className="child">rerdddddd</span>
     </div>
   );
 };

@@ -1,5 +1,23 @@
 # @tangshuo/pro-components
 
+## 1.0.2
+
+### Patch Changes
+
+- TEST
+- Updated dependencies
+  - @tangshuo/pro-demo1@1.0.2
+
+## 1.0.0
+
+### Patch Changes
+
+- 8997590: ss
+- c97b7e0: 测试内容
+- Updated dependencies [8997590]
+- Updated dependencies [c97b7e0]
+  - @tangshuo/pro-demo1@1.0.0
+
 ## 1.0.0
 
 ### Patch Changes

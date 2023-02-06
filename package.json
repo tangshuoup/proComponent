@@ -7,7 +7,7 @@
     "change:version": "changeset version",
     "bootstrap": "node ./scripts/bootstrap.js",
     "release": "pnpm run -r build && changeset publish",
-    "publish": "changeset publish",
+    "publish:only": "changeset publish",
     "start": "pnpm run dev",
     "dev": "dumi dev",
     "build": "pnpm run -r build",
@@ -73,6 +73,9 @@
     "react-is": "18.2.0",
     "styled-components": "^5.3.6",
     "stylelint": "^14.9.1",
+    "stylelint-config-css-modules": "^4.1.0",
+    "stylelint-config-recess-order": "^3.1.0",
+    "stylelint-config-standard": "^29.0.0",
     "typescript": "4.9.4",
     "webpack": "^5.75.0"
   },

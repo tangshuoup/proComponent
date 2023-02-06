@@ -29,4 +29,4 @@ features:
 
 ---
 
-<code src="../packages/demo/src/demo/index.tsx" background="#f7f8fa" title="基础卡片" description="当单独使用时 `ProCard` 就是一个普通的卡片。"></code>
+<code src="../packages/demo1/src/demos/index.tsx" background="#f7f8fa" title="基础卡片" description="当单独使用时 `ProCard` 就是一个普通的卡片。"></code>
