@@ -1,5 +1,16 @@
 # @tangshuo/pro-components
 
+## 2.0.0
+
+### Major Changes
+
+- 1c2ce60: test
+
+### Patch Changes
+
+- Updated dependencies [1c2ce60]
+  - @tangshuo/pro-demo1@2.0.0
+
 ## 1.1.0
 
 ### Minor Changes
