@@ -4,7 +4,7 @@
  * @Author: tangshuo
  * @Date: 2023-01-30 09:41:40
  * @LastEditors: tangshuo
- * @LastEditTime: 2023-02-07 10:26:59
+ * @LastEditTime: 2023-02-07 10:53:44
  */
 import { defineConfig } from 'dumi';
 import { readdirSync } from 'fs';
@@ -19,10 +19,6 @@ const alias = pkgList.reduce((pre: any, pkg) => {
 }, {});
 
 const tailPkgList = pkgList.map((path) => `packages/${path}/src`);
-
-console.log('tailPkgList', tailPkgList);
-
-console.log('alias', alias);
 
 export default defineConfig({
   alias,

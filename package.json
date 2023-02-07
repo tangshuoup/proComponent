@@ -1,7 +1,7 @@
 {
-  "name": "components-pro",
+  "name": "pro-components",
   "version": "0.0.1",
-  "description": "components-pro",
+  "description": "pro-components",
   "scripts": {
     "change": "changeset add",
     "change:version": "changeset version",
@@ -72,6 +72,8 @@
     "react-is": "18.2.0",
     "styled-components": "^5.3.6",
     "stylelint": "^14.9.1",
+    "stylelint-config-css-modules": "^4.1.0",
+    "stylelint-config-recess-order": "^3.1.0",
     "stylelint-config-standard": "^29.0.0",
     "typescript": "4.9.4",
     "webpack": "^5.75.0"
