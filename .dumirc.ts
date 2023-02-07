@@ -4,40 +4,50 @@
  * @Author: tangshuo
  * @Date: 2023-01-30 09:41:40
  * @LastEditors: tangshuo
- * @LastEditTime: 2023-02-01 15:25:08
+ * @LastEditTime: 2023-02-07 10:26:59
  */
 import { defineConfig } from 'dumi';
+import { readdirSync } from 'fs';
+import { join } from 'path';
+
+const pkgList = readdirSync(join(__dirname, 'packages')).filter((pkg) => pkg.charAt(0) !== '.');
+const alias = pkgList.reduce((pre: any, pkg) => {
+  pre[`@tangshuo/pro-${pkg}`] = join(__dirname, 'packages', pkg, 'src');
+  return {
+    ...pre,
+  };
+}, {});
+
+const tailPkgList = pkgList.map((path) => `packages/${path}/src`);
+
+console.log('tailPkgList', tailPkgList);
+
+console.log('alias', alias);
 
 export default defineConfig({
+  alias,
+  resolve: {
+    docDirs: ['docs', ...tailPkgList],
+  },
   themeConfig: {
     nav: {
-      'zh-CN': [{ title: '组件', link: '/components' }],
+      'zh-CN': [
+        { title: '文档', link: '/docs' },
+        { title: '组件', link: '/components' },
+      ],
     },
-    // sidebar: {
-    //   '/components': [
-    //     {
-    //       title: '架构设计',
-    //       children: [
-    //         {
-    //           title: 'Components - 组件设计',
-    //           link: 'components',
-    //         },
-    //         {
-    //           title: 'Schema - 通用配置',
-    //           link: 'schema',
-    //         },
-    //       ],
-    //     },
-    //     {
-    //       title: '布局',
-    //       children: [
-    //         {
-    //           title: 'ProLayout - 高级布局',
-    //           link: '/components/demo1',
-    //         },
-    //       ],
-    //     },
-    //   ],
-    // },
+    sidebar: {
+      '/components': [
+        {
+          title: 'dem22o1',
+          children: [
+            {
+              title: 'demo',
+              link: '/components/demo',
+            },
+          ],
+        },
+      ],
+    },
   },
 });
