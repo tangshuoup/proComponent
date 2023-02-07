@@ -6,7 +6,7 @@
     "change": "changeset add",
     "change:version": "changeset version",
     "bootstrap": "node ./scripts/bootstrap.js",
-    "publish": "changeset publish",
+    "change:publish": "changeset publish",
     "start": "pnpm run dev",
     "dev": "dumi dev",
     "build": "pnpm run -r build",
