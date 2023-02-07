@@ -2,3 +2,4 @@
 *.yaml
 /es
 /lib
+*.md
