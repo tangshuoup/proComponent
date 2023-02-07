@@ -14,5 +14,11 @@
       "@tangshuo/pro-components": ["./packages/components/src/index.tsx"]
     }
   },
+  "allowSyntheticDefaultImports": true,
+  "noImplicitAny": false,
+  "experimentalDecorators": true,
+  "emitDecoratorMetadata": true,
+  "noUnusedLocals": true,
+  "noUnusedParameters": true,
   "include": [".dumi/**/*", ".dumirc.ts", "**/src/**/*", "typings.d.ts"]
 }
