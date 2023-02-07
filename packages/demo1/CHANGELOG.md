@@ -1,5 +1,11 @@
 # @tangshuo/pro-demo1
 
+## 2.0.2
+
+### Patch Changes
+
+- ddbcf75: demo
+
 ## 2.0.0
 
 ### Major Changes
