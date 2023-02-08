@@ -20,5 +20,15 @@
   "emitDecoratorMetadata": true,
   "noUnusedLocals": true,
   "noUnusedParameters": true,
-  "include": [".dumi/**/*", ".dumirc.ts", "**/src/**/*", "typings.d.ts"]
+  "include": [
+    ".dumi/**/*",
+    ".dumirc.ts",
+    "tests",
+    "**/src/**/*",
+    "**/docs/**/*",
+    "scripts/**/*",
+    "typings.d.ts",
+    "jest.config.js",
+    "**/demos"
+  ]
 }
