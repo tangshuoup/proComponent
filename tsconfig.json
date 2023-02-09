@@ -9,7 +9,8 @@
     "paths": {
       "@@/*": [".dumi/tmp/*"],
       "@tangshuo/pro-demo1": ["./packages/demo1/src/index.tsx"],
-      "@tangshuo/pro-components": ["./packages/components/src/index.tsx"]
+      "@tangshuo/pro-components": ["./packages/components/src/index.tsx"],
+      "@tangshuo/pro-demo2": ["./packages/demo2/src/index.tsx"]
     }
   },
   "allowSyntheticDefaultImports": true,

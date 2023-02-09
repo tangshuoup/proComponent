@@ -22,7 +22,8 @@
     "ie >= 10"
   ],
   "dependencies": {
-    "@tangshuo/pro-demo1": "workspace:2.0.2"
+    "@tangshuo/pro-demo1": "workspace:2.0.2",
+    "tangshuo/pro-demo2": "workspace:1.0.0"
   },
   "peerDependencies": {
     "react": ">=16.9.0",
