@@ -16,7 +16,7 @@
     "test": "jest",
     "test:coverage": "jest --coverage",
     "lint": "pnpm run lint:es && pnpm run lint:css",
-    "lint:css": "stylelint \"packages/**/*.{css,less}\"",
+    "lint:css": "stylelint \"packages/**/src/*.{css,less}\"",
     "lint:es": "eslint \"{src,test}/**/*.{js,jsx,ts,tsx}\"",
     "prepublishOnly": "father doctor && pnpm run build"
   },
@@ -78,6 +78,7 @@
     "jest-environment-jsdom": "^29.4.2",
     "lint-staged": "^13.0.3",
     "postcss": "^8.4.21",
+    "postcss-less": "^6.0.0",
     "prettier": "^2.7.1",
     "prettier-plugin-organize-imports": "^3.0.0",
     "prettier-plugin-packagejson": "^2.2.18",

@@ -1,0 +1,30 @@
+{
+  "name": "@tangshuo/pro-demo2",
+  "version": "1.0.0",
+  "description": "@tangshuo/pro-demo2",
+  "module": "es/index.js",
+  "main": "lib/index.js",
+  "types": "lib/index.d.ts",
+  "scripts": {
+    "build": "father build"
+  },
+  "files": [
+    "lib",
+    "dist",
+    "es"
+  ],
+  "browserslist": [
+    "last 2 versions",
+    "Firefox ESR",
+    "> 1%",
+    "ie >= 10"
+  ],
+  "license": "MIT",
+  "peerDependencies": {
+    "react": ">=16.9.0",
+    "react-dom": ">16.9.0"
+  },
+  "publishConfig": {
+    "access": "public"
+  }
+}

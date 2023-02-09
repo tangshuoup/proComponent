@@ -4,7 +4,7 @@
  * @Author: tangshuo
  * @Date: 2023-02-06 10:49:00
  * @LastEditors: tangshuo
- * @LastEditTime: 2023-02-07 11:13:59
+ * @LastEditTime: 2023-02-09 15:23:25
  */
 module.exports = {
   extends: ['stylelint-config-recess-order', 'stylelint-config-standard', 'stylelint-config-css-modules'],
@@ -14,5 +14,6 @@ module.exports = {
     'length-zero-no-unit': null,
     'number-leading-zero': null,
   },
-  ignoreFiles: ['**/*.js', '**/*.jsx', '**/*.tsx', '**/*.ts'],
+  customSyntax: 'postcss-less',
+  ignoreFiles: ['**/*.js', '**/*.jsx', '**/*.tsx', '**/*.ts', '**/{es,lib}/*.less'],
 };

@@ -8,8 +8,6 @@
     "baseUrl": "./",
     "paths": {
       "@@/*": [".dumi/tmp/*"],
-      "packages": ["src"],
-      "packages/*": ["src/*", "*"],
       "@tangshuo/pro-demo1": ["./packages/demo1/src/index.tsx"],
       "@tangshuo/pro-components": ["./packages/components/src/index.tsx"]
     }
@@ -29,6 +27,8 @@
     "scripts/**/*",
     "typings.d.ts",
     "jest.config.js",
-    "**/demos"
+    "**/demos",
+    ".eslintrc.js",
+    ".stylelintrc.js"
   ]
 }

@@ -1,5 +1,11 @@
 # @tangshuo/pro-components
 
+## 2.0.4
+
+### Patch Changes
+
+- c244cc8: test
+
 ## 2.0.3
 
 ### Patch Changes
