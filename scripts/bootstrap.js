@@ -4,7 +4,7 @@
  * @Author: tangshuo
  * @Date: 2023-02-01 09:48:21
  * @LastEditors: tangshuo
- * @LastEditTime: 2023-02-03 10:39:03
+ * @LastEditTime: 2023-02-08 16:53:23
  */
 const { existsSync, writeFileSync, readdirSync, readFileSync } = require('fs');
 const { join, resolve } = require('path');
@@ -35,7 +35,7 @@ const { yParser } = require('@umijs/utils');
         scripts: {
           build: 'father build',
         },
-        files: ['lib', 'src', 'dist', 'es'],
+        files: ['lib', 'dist', 'es'],
         browserslist: ['last 2 versions', 'Firefox ESR', '> 1%', 'ie >= 10'],
         license: 'MIT',
         peerDependencies: {
