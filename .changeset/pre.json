@@ -1,0 +1,10 @@
+{
+  "mode": "pre",
+  "tag": "next",
+  "initialVersions": {
+    "@tangshuo/pro-components": "2.0.4",
+    "@tangshuo/pro-demo1": "2.0.2",
+    "@tangshuo/pro-demo2": "1.0.0"
+  },
+  "changesets": ["soft-foxes-return"]
+}

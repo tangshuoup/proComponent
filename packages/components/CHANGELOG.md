@@ -1,5 +1,14 @@
 # @tangshuo/pro-components
 
+## 2.0.5-next.0
+
+### Patch Changes
+
+- a441a55: 大苏打
+- Updated dependencies [a441a55]
+  - @tangshuo/pro-demo1@2.0.3-next.0
+  - @tangshuo/pro-demo2@1.0.1-next.0
+
 ## 2.0.4
 
 ### Patch Changes

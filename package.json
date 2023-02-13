@@ -3,6 +3,7 @@
   "version": "0.0.1",
   "description": "pro-components",
   "scripts": {
+    "prechange": "changeset pre enter beta",
     "change": "changeset add",
     "change:version": "changeset version",
     "bootstrap": "node ./scripts/bootstrap.js",

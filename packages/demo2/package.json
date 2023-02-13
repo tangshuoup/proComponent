@@ -1,6 +1,6 @@
 {
   "name": "@tangshuo/pro-demo2",
-  "version": "1.0.0",
+  "version": "1.0.1-next.0",
   "description": "@tangshuo/pro-demo2",
   "module": "es/index.js",
   "main": "lib/index.js",
