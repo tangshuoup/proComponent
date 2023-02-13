@@ -1,6 +1,6 @@
 {
-  "mode": "pre",
-  "tag": "next",
+  "mode": "exit",
+  "tag": "beta",
   "initialVersions": {
     "@tangshuo/pro-components": "2.0.4",
     "@tangshuo/pro-demo1": "2.0.2",

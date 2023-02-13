@@ -4,6 +4,7 @@
   "description": "pro-components",
   "scripts": {
     "prechange": "changeset pre enter beta",
+    "prechange:exit": "changeset pre exit",
     "change": "changeset add",
     "change:version": "changeset version",
     "bootstrap": "node ./scripts/bootstrap.js",
