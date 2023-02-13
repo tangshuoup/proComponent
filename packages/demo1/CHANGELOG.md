@@ -1,5 +1,11 @@
 # @tangshuo/pro-demo1
 
+## 2.0.3-beta.1
+
+### Patch Changes
+
+- a42ce0d: test
+
 ## 2.0.3-next.0
 
 ### Patch Changes

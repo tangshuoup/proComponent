@@ -1,5 +1,14 @@
 # @tangshuo/pro-components
 
+## 2.0.5-beta.1
+
+### Patch Changes
+
+- a42ce0d: test
+- Updated dependencies [a42ce0d]
+  - @tangshuo/pro-demo1@2.0.3-beta.1
+  - @tangshuo/pro-demo2@1.0.1-beta.1
+
 ## 2.0.5-next.0
 
 ### Patch Changes
