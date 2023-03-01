@@ -1,5 +1,12 @@
 # @tangshuo/pro-form
 
+## 1.0.2
+
+### Patch Changes
+
+- test
+- 34671e7: test
+
 ## 1.0.2-alpha.0
 
 ### Patch Changes
