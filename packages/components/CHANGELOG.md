@@ -1,5 +1,11 @@
 # @tangshuo/pro-components
 
+## 1.0.0-alpha.2
+
+### Patch Changes
+
+- f5e95fe: test
+
 ## 2.0.5-beta.1
 
 ### Patch Changes
