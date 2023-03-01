@@ -1,0 +1,118 @@
+@import (reference) "../../styles/variables.less";
+
+.@{prefixfiresoon}-sidebar {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 100;
+  box-sizing: border-box;
+  width: @s-menu-width;
+  background-color: #fff;
+  transition: left 0.3s;
+
+  &::after {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    width: 1px;
+    content: "";
+    background-color: #ebedf1;
+  }
+
+  &[data-hidden] {
+    display: none;
+  }
+
+  @media @mobile {
+    top: @s-mobile-nav-height;
+    left: -@s-menu-mobile-width;
+    display: block !important;
+    width: @s-menu-mobile-width;
+    background-color: #fff;
+
+    &[data-mobile-show] {
+      left: 0;
+    }
+
+    [data-prefers-color="dark"] & {
+      background-color: @c-bg-dark;
+    }
+  }
+
+  .ant-menu {
+    &-submenu {
+      > .ant-menu-inline {
+        padding: 0 8px;
+      }
+
+      &-title {
+        font-weight: 600;
+      }
+    }
+
+    &-submenu-selected {
+      .ant-menu-submenu-title {
+        color: #4569d4;
+      }
+    }
+
+    > .ant-menu-item-selected {
+      background-color: #f7f8fa;
+
+      &::after {
+        border: 0;
+      }
+
+      & > a {
+        color: #4569d4;
+      }
+    }
+
+    &-item {
+      a {
+        padding-right: 24px;
+        overflow: hidden;
+        font-size: 12px;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+      }
+
+      & > a:hover {
+        color: #4569d4;
+      }
+    }
+
+    /* stylelint-disable-next-line no-duplicate-selectors */
+    &-submenu-title {
+      &:hover {
+        color: #4569d4;
+      }
+    }
+
+    .firesoon-menu-item {
+      a {
+        font-size: 14px !important;
+      }
+
+      font-weight: 600;
+    }
+  }
+
+  &-tips {
+    padding-top: 24px;
+    padding-left: 24px;
+    border-bottom: 1px solid #e7e7e7;
+
+    h3 {
+      font-size: 20px;
+      font-weight: 600;
+      color: #000;
+    }
+
+    p {
+      color: #999;
+    }
+  }
+}

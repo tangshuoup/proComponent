@@ -6,5 +6,8 @@
  * @LastEditors: tangshuo
  * @LastEditTime: 2023-02-09 15:48:22
  */
-export * from '@tangshuo/pro-demo1';
-export * from '@tangshuo/pro-demo2';
+export * from "@firesoon/pro-layout";
+export * from "@firesoon/pro-form";
+
+// @ts-ignore
+export * from "./version";

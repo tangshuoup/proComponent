@@ -5,6 +5,8 @@ hero:
   description: demo
   actions:
     - text: demo
-      link: /docs/getting-started
+      link: /components
       
 ---
+
+@firesoon/pro-components

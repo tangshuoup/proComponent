@@ -1,0 +1,32 @@
+{
+  "name": "@tangshuo/pro-layout",
+  "version": "1.0.0-beta.1",
+  "description": "@tangshuo/pro-layout",
+  "module": "es/index.js",
+  "main": "lib/index.js",
+  "types": "lib/index.d.ts",
+  "scripts": {
+    "build": "father build"
+  },
+  "files": [
+    "lib",
+    "dist",
+    "es"
+  ],
+  "browserslist": [
+    "last 2 versions",
+    "Firefox ESR",
+    "> 1%",
+    "ie >= 10"
+  ],
+  "license": "MIT",
+  "peerDependencies": {
+    "react": ">=16.9.0",
+    "react-dom": ">16.9.0",
+    "@firesoon/antd": ">1.0.5",
+    "@firesoon/icons-react": ">2.1.14"
+  },
+  "publishConfig": {
+    "access": "public"
+  }
+}

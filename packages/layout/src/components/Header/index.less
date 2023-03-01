@@ -1,0 +1,158 @@
+@import url("../../theme.less");
+
+.fs-header {
+  @bgColor: #517cd8;
+  @hoverBgColor: #214592;
+  @fontColor: #bfc6df;
+  @heightSize: 48px;
+
+  display: flex;
+  justify-content: space-between;
+  height: @heightSize;
+  background-color: @primary-color;
+
+  .fs-logo {
+    display: flex;
+    align-items: center;
+    margin-left: 16px;
+
+    .fs-back {
+      margin-right: 16px;
+      font-size: 24px;
+      color: #fff;
+      cursor: pointer;
+      opacity: 0.5;
+    }
+
+    .fs-back:hover {
+      background: #5f89e3;
+      border-radius: 4px;
+      opacity: 1;
+    }
+
+    .fs-hosName {
+      height: 16px;
+      margin-left: 32px;
+      font-size: 14px;
+      line-height: 16px;
+      color: #fff;
+    }
+
+    .fs-icon {
+      display: inline-block;
+      padding: 1px;
+      margin-left: 4px;
+      color: @fontColor;
+      text-align: center;
+      cursor: pointer;
+      background: @bgColor;
+      border-radius: 50%;
+
+      &:hover {
+        color: #fff;
+        background: @hoverBgColor;
+      }
+    }
+  }
+
+  .fs-user {
+    display: flex;
+    align-items: center;
+    height: 100%;
+    margin-right: 20px;
+    line-height: @heightSize;
+    color: #fff;
+
+    > .anticon-user {
+      height: @heightSize;
+      font-size: 18px;
+      line-height: @heightSize;
+      vertical-align: middle;
+    }
+
+    &-name {
+      display: inline-block;
+      height: 100%;
+      margin-left: 8px;
+      font-size: 14px;
+    }
+
+    &-roles {
+      @selectHeight: 28px;
+
+      .ant-select-selection {
+        color: #fff;
+        background-color: @bgColor;
+        border: none;
+
+        &.ant-select-selection--single {
+          height: @selectHeight;
+
+          .ant-select-selection__rendered {
+            line-height: @selectHeight;
+          }
+
+          .ant-select-arrow {
+            color: inherit;
+          }
+        }
+
+        &:hover {
+          color: #fff;
+          background-color: #5f89e3;
+        }
+      }
+    }
+
+    &-icon {
+      display: inline-block;
+      height: 24px;
+      padding: 0 3px;
+      margin-left: 24px;
+      line-height: 24px;
+      cursor: pointer;
+
+      .anticon-ellipsis {
+        position: relative;
+        top: 2px;
+      }
+    }
+
+    &-icon:hover {
+      background: #5f89e3;
+      border-radius: 4px;
+    }
+
+    &-isNotice {
+      padding: 0 3px;
+      margin-left: 0px;
+    }
+
+    &-notice {
+      padding: 3px;
+      margin: 0 20px;
+    }
+
+    &-notice:hover {
+      background: #5f89e3;
+      border-radius: 4px;
+    }
+  }
+}
+
+.fs-header-drop {
+  z-index: 1051;
+
+  .ant-dropdown-menu-item {
+    font-size: 14px;
+    line-height: 30px;
+  }
+
+  .unClickable {
+    cursor: default;
+
+    &:hover {
+      background-color: #fff;
+    }
+  }
+}

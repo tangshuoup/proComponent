@@ -1,7 +1,12 @@
+<!--
+ * @Descripttion: 
+ * @version: 
+ * @Author: tangshuo
+ * @Date: 2023-02-13 14:20:27
+ * @LastEditors: tangshuo
+ * @LastEditTime: 2023-02-14 10:21:37
+-->
 # packages
-
-[![NPM version](https://img.shields.io/npm/v/packages.svg?style=flat)](https://npmjs.org/package/packages)
-[![NPM downloads](http://img.shields.io/npm/dm/packages.svg?style=flat)](https://npmjs.org/package/packages)
 
 A react library developed with dumi
 
@@ -22,18 +27,19 @@ $ pnpm install
 # develop library by docs demo
 $ pnpm start
 
-# build library source code
-$ pnpm run build
+# new packkge
+$ pnpm bootstarp
 
-# build library source code in watch mode
-$ pnpm run build:watch
+# build all
+$ pnpm build
 
-# build docs
-$ pnpm run docs:build
+# build Single package
+$ cd package && pnpm build
 
-# check your project for potential problems
-$ pnpm run doctor
 ```
+
+## Build
+
 ## Release
 
 ```bash
@@ -45,19 +51,20 @@ $ pnpm run doctor
   ## 修改包版本
   $ pnpm change:version
   ## publish
-   $ pnpm change:publish
+  $ pnpm change:publish
 # 正常模式
-  ## 如果再预发版本模式，先退出
+  ## 如果在预发版本模式，先退出
   $ pnpm prechange:exit
   ## 选择修改的包，添加修改信息
   $ pnpm change  
   ## 修改包版本
   $ pnpm change:version
   ## publish
-   $ pnpm change:publish
+  $ pnpm change:publish
 
 
 ```
+
 
 ## LICENSE
 

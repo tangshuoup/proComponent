@@ -1,0 +1,35 @@
+@import (reference) "../../styles/variables.less";
+
+.@{prefixfiresoon}-toc {
+  position: fixed;
+  top: 114px;
+  right: 0;
+  z-index: 10;
+  width: 136px;
+  padding-right: 24px;
+
+  .ant-anchor {
+    font-size: 12px;
+
+    &-link {
+      .ant-anchor-link {
+        padding-left: 8px;
+      }
+
+      &-active {
+        > .ant-anchor-link-title {
+          color: #3367d6;
+        }
+      }
+    }
+
+    &-ink-ball {
+      left: 1px;
+      width: 1px;
+      height: 25px;
+      margin-top: -10px;
+      border: 1px solid #3367d6;
+      border-radius: 0;
+    }
+  }
+}
