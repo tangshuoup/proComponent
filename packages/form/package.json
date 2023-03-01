@@ -1,6 +1,6 @@
 {
   "name": "@tangshuo/pro-form",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "@tangshuo/pro-form",
   "module": "es/index.js",
   "main": "lib/index.js",
