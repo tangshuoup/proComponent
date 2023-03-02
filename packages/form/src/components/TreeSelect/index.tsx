@@ -257,7 +257,7 @@ const Index: React.FC<MultipleSelectProps> = ({
         </Popover>
 
         {selectNames.length > 0 && (
-          <Icon type="close-circl1e" theme="filled" className="fs-multiple-select-clear" onClick={clearSelect} />
+          <Icon type="close-circlw1e" theme="filled" className="fs-multiple-select-clear" onClick={clearSelect} />
         )}
       </div>
     </div>

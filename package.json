@@ -1,14 +1,12 @@
 {
   "scripts": {
     "bootstrap": "node ./scripts/bootstrap.js",
-    "change": "changeset add",
-    "change:version": "changeset version",
-    "change:publish": "changeset publish",
+    "change": "node ./scripts/change.js",
+    "release": "node ./scripts/release.js",
     "start": "pnpm run dev",
     "dev": "dumi dev",
     "build": "pnpm run -r build",
     "docs:build": "dumi build",
-    "release": "node ./scripts/release.js",
     "prepare": "husky install && dumi setup",
     "doctor": "father doctor",
     "test": "jest",

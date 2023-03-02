@@ -4,7 +4,7 @@
  * @Author: tangshuo
  * @Date: 2023-03-01 09:55:43
  * @LastEditors: tangshuo
- * @LastEditTime: 2023-03-02 11:28:40
+ * @LastEditTime: 2023-03-02 14:00:28
  */
 const { yParser, chalk } = require("@umijs/utils");
 const exec = require("./utils/exec");
@@ -20,9 +20,7 @@ function logStep(name) {
   console.log(`${chalk.gray(">> Release:")} ${chalk.magenta.bold(name)}`);
 }
 
-async function changeWorkflow() {
-  await exec("pnpm", ["run", "change"]);
-  await exec("pnpm", ["run", "change:version"]);
+async function publishWorkflow() {
   await exec("pnpm", ["run", "change:publish"]);
   await exec("pnpm", ["run", "version"]);
 }
@@ -30,36 +28,23 @@ async function changeWorkflow() {
 async function release() {
   if (!args.skipGitStatusCheck) {
     const gitStatus = execa.sync("git", ["status", "--porcelain"]).stdout;
-    console.log(gitStatus);
     if (gitStatus.length) {
       printErrorAndExit(`Your git status is not clean. Aborting.`);
     }
   } else {
     logStep("git status check is skipped, since --skip-git-status-check is supplied");
   }
-
   if (!args.skipBuild) {
     logStep("build");
     await exec("pnpm", ["run", "build"]);
   } else {
     logStep("build is skipped, since args.skipBuild is supplied");
   }
-  // changeset
-
   if (args.skipChange) {
     logStep("change is skipped, since args.skipChange is supplied");
     return;
   }
-
-  if (args.preChange) {
-    const preType = args.preChange;
-    logStep("preChange");
-    await exec("pnpm", ["changeset", `pre enter ${preType}`]);
-    await changeWorkflow();
-    await exec("pnpm", ["changeset", "pre exit"]);
-  } else {
-    await changeWorkflow();
-  }
+  await publishWorkflow();
 }
 
 release();
