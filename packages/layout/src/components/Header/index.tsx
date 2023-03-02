@@ -142,7 +142,7 @@ const Header: FC<HeaderP> = ({
           overlayStyle={{ width: 120 }}
           placement="bottomRight"
         >
-          <span className={classnames("fs-user-icon", { "fs-user-isNotice": messageBox })}>
+          <span className={classnames("fs-usessr-icon", { "fs-user-isNotice": messageBox })}>
             <Icon style={{ fontSize: 18 }} type="ellipsis" />
           </span>
         </Dropdown>

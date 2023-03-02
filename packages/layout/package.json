@@ -1,6 +1,6 @@
 {
   "name": "@tangshuo/pro-layout",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "@tangshuo/pro-layout",
   "module": "es/index.js",
   "main": "lib/index.js",
