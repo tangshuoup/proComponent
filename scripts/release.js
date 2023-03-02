@@ -4,7 +4,7 @@
  * @Author: tangshuo
  * @Date: 2023-03-01 09:55:43
  * @LastEditors: tangshuo
- * @LastEditTime: 2023-03-02 09:49:39
+ * @LastEditTime: 2023-03-02 10:25:35
  */
 const { yParser, chalk } = require("@umijs/utils");
 const exec = require("./utils/exec");
@@ -27,41 +27,38 @@ async function changeWorkflow() {
 }
 
 async function release() {
-  const diffChange = execa.sync("git", ["diff", "HEAD^1", "--name-only"]);
-  console.log("diffChange", diffChange.stdout);
-  return;
-  // if (!args.skipGitStatusCheck) {
-  //   const gitStatus = execa.sync("git", ["status", "--porcelain"]).stdout;
-  //   console.log(gitStatus);
-  //   if (gitStatus.length) {
-  //     printErrorAndExit(`Your git status is not clean. Aborting.`);
-  //   }
-  // } else {
-  //   logStep("git status check is skipped, since --skip-git-status-check is supplied");
-  // }
+  if (!args.skipGitStatusCheck) {
+    const gitStatus = execa.sync("git", ["status", "--porcelain"]).stdout;
+    console.log(gitStatus);
+    if (gitStatus.length) {
+      printErrorAndExit(`Your git status is not clean. Aborting.`);
+    }
+  } else {
+    logStep("git status check is skipped, since --skip-git-status-check is supplied");
+  }
 
-  // if (!args.skipBuild) {
-  //   logStep("build");
-  //   await exec("pnpm", ["run", "build"]);
-  // } else {
-  //   logStep("build is skipped, since args.skipBuild is supplied");
-  // }
-  // // changeset
+  if (!args.skipBuild) {
+    logStep("build");
+    await exec("pnpm", ["run", "build"]);
+  } else {
+    logStep("build is skipped, since args.skipBuild is supplied");
+  }
+  // changeset
 
-  // if (args.skipChange) {
-  //   logStep("change is skipped, since args.skipChange is supplied");
-  //   return;
-  // }
+  if (args.skipChange) {
+    logStep("change is skipped, since args.skipChange is supplied");
+    return;
+  }
 
-  // if (args.preChange) {
-  //   const preType = args.preChange;
-  //   logStep("preChange");
-  //   await exec("pnpm", ["changeset", `pre enter ${preType}`]);
-  //   await changeWorkflow();
-  //   await exec("pnpm", ["changeset", "pre exit"]);
-  // } else {
-  //   await changeWorkflow();
-  // }
+  if (args.preChange) {
+    const preType = args.preChange;
+    logStep("preChange");
+    await exec("pnpm", ["changeset", `pre enter ${preType}`]);
+    await changeWorkflow();
+    await exec("pnpm", ["changeset", "pre exit"]);
+  } else {
+    await changeWorkflow();
+  }
 }
 
 release();
