@@ -138,7 +138,7 @@ const Header: FC<HeaderP> = ({
 
         <Dropdown
           overlay={menu}
-          overlayClassName="fs-header2-drop"
+          overlayClassName="fs-header222-drop"
           overlayStyle={{ width: 120 }}
           placement="bottomRight"
         >
