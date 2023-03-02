@@ -1,5 +1,11 @@
 # @tangshuo/pro-layout
 
+## 1.0.6-next.0
+
+### Patch Changes
+
+- 测试
+
 ## 1.0.5
 
 ### Patch Changes

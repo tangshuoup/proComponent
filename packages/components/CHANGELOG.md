@@ -1,5 +1,11 @@
 # @tangshuo/pro-components
 
+## 1.0.7-next.0
+
+### Patch Changes
+
+- 测试
+
 ## 1.0.6
 
 ### Patch Changes
