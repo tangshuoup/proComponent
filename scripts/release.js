@@ -4,7 +4,7 @@
  * @Author: tangshuo
  * @Date: 2023-03-01 09:55:43
  * @LastEditors: tangshuo
- * @LastEditTime: 2023-03-02 14:00:28
+ * @LastEditTime: 2023-03-02 14:14:13
  */
 const { yParser, chalk } = require("@umijs/utils");
 const exec = require("./utils/exec");
@@ -39,7 +39,7 @@ async function release() {
     logStep("change is skipped, since args.skipChange is supplied");
     return;
   }
-  await exec("pnpm", ["run", "change:publish"]);
+  await exec("pnpm", ["changeset", "publish"]);
   execa.sync("git", ["push", "--follow-tags"]);
 }
 
