@@ -20,11 +20,6 @@ function logStep(name) {
   console.log(`${chalk.gray(">> Release:")} ${chalk.magenta.bold(name)}`);
 }
 
-async function publishWorkflow() {
-  await exec("pnpm", ["run", "change:publish"]);
-  await exec("pnpm", ["run", "version"]);
-}
-
 async function release() {
   if (!args.skipGitStatusCheck) {
     const gitStatus = execa.sync("git", ["status", "--porcelain"]).stdout;
@@ -44,7 +39,8 @@ async function release() {
     logStep("change is skipped, since args.skipChange is supplied");
     return;
   }
-  await publishWorkflow();
+  await exec("pnpm", ["run", "change:publish"]);
+  execa.sync("git", ["push", "--follow-tags"]);
 }
 
 release();
