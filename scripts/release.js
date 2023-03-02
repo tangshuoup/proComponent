@@ -4,7 +4,7 @@
  * @Author: tangshuo
  * @Date: 2023-03-01 09:55:43
  * @LastEditors: tangshuo
- * @LastEditTime: 2023-03-02 10:25:35
+ * @LastEditTime: 2023-03-02 11:28:40
  */
 const { yParser, chalk } = require("@umijs/utils");
 const exec = require("./utils/exec");
@@ -24,6 +24,7 @@ async function changeWorkflow() {
   await exec("pnpm", ["run", "change"]);
   await exec("pnpm", ["run", "change:version"]);
   await exec("pnpm", ["run", "change:publish"]);
+  await exec("pnpm", ["run", "version"]);
 }
 
 async function release() {

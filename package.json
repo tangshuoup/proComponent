@@ -16,7 +16,8 @@
     "lint": "pnpm run lint:es && pnpm run lint:css",
     "lint:css": "stylelint \"packages/**/src/*.{css,less}\"",
     "lint:es": "eslint \"{src,test}/**/*.{js,jsx,ts,tsx}\"",
-    "preinstall": "npx only-allow pnpm"
+    "preinstall": "npx only-allow pnpm",
+    "version": "node ./scripts/getVersion.js"
   },
   "authors": [],
   "license": "MIT",

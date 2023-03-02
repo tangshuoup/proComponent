@@ -1,5 +1,5 @@
 export const version = {
-  "@firesoon/pro-components": "1.0.0-beta.1",
-  "@firesoon/pro-form": "1.0.0-beta.1",
-  "@firesoon/pro-layout": "1.0.0-beta.1",
+  "@tangshuo/pro-components": "1.0.4",
+  "@tangshuo/pro-form": "1.0.3",
+  "@tangshuo/pro-layout": "1.0.4",
 };
