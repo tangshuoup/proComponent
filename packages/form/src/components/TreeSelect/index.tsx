@@ -247,7 +247,7 @@ const Index: React.FC<MultipleSelectProps> = ({
                   })}
                 />
               }
-              value={selectNames.join("，")}
+              value={selectNames.join("， ")}
               placeholder={placeholder}
               style={{
                 width,
