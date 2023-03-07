@@ -1,5 +1,12 @@
 # @tangshuo/pro-form
 
+## 1.0.6
+
+### Patch Changes
+
+- test
+- d376f48: 测试
+
 ## 1.0.6-next.0
 
 ### Patch Changes

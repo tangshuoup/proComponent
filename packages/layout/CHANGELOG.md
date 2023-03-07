@@ -1,5 +1,11 @@
 # @tangshuo/pro-layout
 
+## 1.0.6
+
+### Patch Changes
+
+- d376f48: 测试
+
 ## 1.0.6-next.0
 
 ### Patch Changes
