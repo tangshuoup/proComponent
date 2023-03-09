@@ -9,4 +9,4 @@ hero:
       
 ---
 
-@firesoon/pro-components 1
+@firesoon/pro-components 12
