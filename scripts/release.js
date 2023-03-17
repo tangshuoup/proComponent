@@ -29,16 +29,6 @@ async function release() {
   } else {
     logStep("git status check is skipped, since --skip-git-status-check is supplied");
   }
-  if (!args.skipBuild) {
-    logStep("build");
-    await exec("pnpm", ["run", "build"]);
-  } else {
-    logStep("build is skipped, since args.skipBuild is supplied");
-  }
-  if (args.skipChange) {
-    logStep("change is skipped, since args.skipChange is supplied");
-    return;
-  }
   await exec("pnpm", ["changeset", "publish"]);
   execa.sync("git", ["push", "--follow-tags"]);
 }
