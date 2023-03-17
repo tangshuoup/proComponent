@@ -4,7 +4,7 @@
  * @Author: tangshuo
  * @Date: 2023-03-02 13:43:51
  * @LastEditors: tangshuo
- * @LastEditTime: 2023-03-17 11:39:40
+ * @LastEditTime: 2023-03-17 13:41:36
  */
 const { yParser, chalk } = require("@umijs/utils");
 const exec = require("./utils/exec");
@@ -18,6 +18,7 @@ function logStep(name) {
 async function changeWorkflow() {
   await exec("pnpm", ["changeset", "add"]);
   await exec("pnpm", ["changeset", "version"]);
+  await exec("pnpm", ["run", "version"]);
   const gitDiff = execa.sync("git", ["diff", "--name-only", "packages/"]).stdout;
   const diffPackages = gitDiff.split("\n")?.map((i) => i.split("/")[1]);
   const packages = [...new Set(diffPackages)];
